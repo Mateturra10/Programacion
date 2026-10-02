@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
+.ficha {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background-color: #ffffff;
+  width: 700px;
+  max-width: 100%;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  border: 4px solid #c1121f;
+}
+
+.ficha h1 {
+  text-align: center;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.seccion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  border: 1px solid #333333;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #f7f7f7;
+}
+
+.seccion legend {
+  font-weight: bold;
+  color: #c1121f;
+  padding: 0 8px;
+}
+
+.seccion-ancha {
+  flex-direction: column;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1 1 200px;
+}
+
+.campo-ancho {
+  flex: 1 1 100%;
+}
+
+.campo label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333333;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  padding: 8px;
+  border: 1px solid #bbbbbb;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.campo input:hover,
+.campo select:hover,
+.campo textarea:hover {
+  border-color: #c1121f;
+}
+
+.grupo-radio,
+.grupo-checkbox {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.grupo-radio p,
+.grupo-checkbox p {
+  margin: 0;
+  width: 100%;
+  font-weight: bold;
+  color: #333333;
+}
+
+.grupo-radio label,
+.grupo-checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: normal;
+  background-color: #e8e8e8;
+  border: 1px solid #1a1a1a;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.grupo-radio label:hover,
+.grupo-checkbox label:hover {
+  background-color: #c1121f;
+  color: #ffffff;
+}
+
+button[type="submit"] {
+  align-self: center;
+  padding: 12px 32px;
+  background-color: #c1121f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #1a1a1a;
+}

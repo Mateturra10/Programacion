@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ficha de Futbolista</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div id="plantel"></div>
+
+  <form class="ficha" action="#" method="POST">
+
+    <h1>Crear Ficha de Futbolista</h1>
+
+    <fieldset class="seccion">
+      <legend>Datos personales</legend>
+
+      <div class="campo">
+        <label for="nombre">Nombre del futbolista:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Lionel Messi" required minlength="3">
+      </div>
+
+      <div class="campo">
+        <label for="pais">Selección:</label>
+        <select id="pais" name="pais">
+          <option value="ar">Argentina</option>
+          <option value="br">Brasil</option>
+          <option value="fr">Francia</option>
+          <option value="es">España</option>
+          <option value="de">Alemania</option>
+          <option value="it">Italia</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="nacimiento" name="nacimiento">
+      </div>
+
+      <div class="campo">
+        <label for="foto">Foto del jugador:</label>
+        <input type="file" id="foto" name="foto">
+      </div>
+    </fieldset>
+
+    <fieldset class="seccion">
+      <legend>Atributos de juego</legend>
+
+      <div class="campo">
+        <label for="dorsal">Número de camiseta:</label>
+        <input type="number" id="dorsal" name="dorsal" min="1" max="99" required>
+      </div>
+
+      <div class="campo grupo-radio">
+        <p>Posición en la cancha:</p>
+
+        <label for="pos-arquero">
+          <input type="radio" id="pos-arquero" name="posicion" value="arquero">
+          Arquero
+        </label>
+
+        <label for="pos-defensor">
+          <input type="radio" id="pos-defensor" name="posicion" value="defensor">
+          Defensor
+        </label>
+
+        <label for="pos-medio">
+          <input type="radio" id="pos-medio" name="posicion" value="mediocampista">
+          Mediocampista
+        </label>
+
+        <label for="pos-delantero">
+          <input type="radio" id="pos-delantero" name="posicion" value="delantero">
+          Delantero
+        </label>
+      </div>
+
+      <div class="campo grupo-checkbox">
+        <p>Fortalezas:</p>
+
+        <label for="f-velocidad">
+          <input type="checkbox" id="f-velocidad" name="fortalezas" value="velocidad">
+          Velocidad
+        </label>
+
+        <label for="f-definicion">
+          <input type="checkbox" id="f-definicion" name="fortalezas" value="definicion">
+          Definición
+        </label>
+
+        <label for="f-pase">
+          <input type="checkbox" id="f-pase" name="fortalezas" value="pase">
+          Pase
+        </label>
+
+        <label for="f-gambeta">
+          <input type="checkbox" id="f-gambeta" name="fortalezas" value="gambeta">
+          Gambeta
+        </label>
+
+        <label for="f-cabezazo">
+          <input type="checkbox" id="f-cabezazo" name="fortalezas" value="cabezazo">
+          Cabezazo
+        </label>
+
+        <label for="f-marca">
+          <input type="checkbox" id="f-marca" name="fortalezas" value="marca">
+          Marca
+        </label>
+      </div>
+
+      <div class="campo">
+        <label for="velocidad">Velocidad (1 a 10):</label>
+        <input type="range" id="velocidad" name="velocidad" min="1" max="10" value="5">
+      </div>
+
+      <div class="campo">
+        <label for="color">Color principal de la camiseta:</label>
+        <input type="color" id="color" name="color" value="#1e90ff">
+      </div>
+    </fieldset>
+
+    <fieldset class="seccion seccion-ancha">
+      <legend>Trayectoria</legend>
+
+      <div class="campo campo-ancho">
+        <label for="reseña">Breve reseña de su trayectoria:</label>
+        <textarea id="reseña" name="reseña" rows="4" placeholder="Contá dónde jugó, logros, etc."></textarea>
+      </div>
+    </fieldset>
+
+    <button type="submit">Crear ficha</button>
+
+  </form>
+  <script src="script.js"></script>
+
+</body>
+</html>
